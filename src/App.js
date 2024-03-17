@@ -1,6 +1,6 @@
 import Navbar from './Components/Navbar';
 import Features from './Components/Features';
-import Services from './Components/Services';
+// import Services from './Components/Services';
 import Qualities from './Components/Qualities';
 import Contact from './Components/Contact';
 import AboutUs from './Components/AboutUs';
