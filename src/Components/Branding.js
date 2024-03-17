@@ -1,6 +1,8 @@
 import React from 'react'
 import Img from '../Images/IMG 4.jpg'
 import { FaCheckCircle } from "react-icons/fa";
+import Buttons from './Elements/Buttons';
+import Headings from './Elements/Headings';
 
 const Branding = () => {
 
@@ -32,9 +34,10 @@ const Branding = () => {
     return (
         <>
             <div className='md:flex p-6 bg-white'>
-                <div className='w-full md:w-1/2'>
+                <div className='w-full md:w-9/12'>
                     <div className='space-y-4 w-full lg:w-11/12 xl:w-full'>
-                        <button className='bg-[#0081d5] w-36 text-white text-xl font-medium py-2 px-3 rounded-lg'>Get In Touch</button>
+                        {/* <button className='bg-[#0081d5] w-36 text-white text-xl font-medium py-2 px-3 rounded-lg'>Get In Touch</button> */}
+                        <Headings title="Get In Touch" />
                         <h1 className='text-gray-800 text2xl xl:text-3xl font-medium'>An Optimum Packages</h1>
                         <h1 className='text-[#0081d5] text2xl xl:text-3xl font-medium'>For Your Bussiness</h1>
                         <p className='text-gray-800 text-sm'>We are offering a complete package to start your digital journey. Design Craftic is keen to drive your ventures to new heights. Your brand, our design – A responsive and crafty website design to interact with your audience.</p>
@@ -72,12 +75,14 @@ const Branding = () => {
                                 ))}
                             </div>
                         </div>
-                            <button className='bg-[#0081d5] w-36 text-white text-xl font-medium py-2 px-3 rounded-lg mr-8'>Order Now</button>
-                            <button className='w-36 border border-black text-xl font-medium py-2 px-3 rounded-lg'>Live Chat</button>
+                        {/* <button className='bg-[#0081d5] w-36 text-white text-xl font-medium py-2 px-3 rounded-lg mr-8'>Order Now</button> */}
+                        <Buttons title="Order Now" />
+                        <Buttons title="Live Chat" />
+                        {/* <button className='w-36 border border-black text-xl font-medium py-2 px-3 rounded-lg mx-3'>Live Chat</button> */}
                     </div>
                 </div>
-                <div className='w-full md:w-11/12 flex justify-end items-center'>
-                    <div className='mx-auto w-9/12'>
+                <div className='w-full md:w-3/4 flex justify-end items-center'>
+                    <div className='mx-auto'>
                         <img src={Img} className='w-full' />
                     </div>
                 </div>

@@ -13,6 +13,7 @@ import Img3 from '../Images/service-img/service-img-03.png'
 import Img4 from '../Images/service-img/service-img-04.png'
 import Img5 from '../Images/service-img/service-img-05.png'
 import Img6 from '../Images/service-img/service-img-06.png'
+import Headings from './Elements/Headings';
 
 const Slider = () => {
     const boxes = [
@@ -54,8 +55,9 @@ const Slider = () => {
 
     return (
         <div className='body'>
-            <h1 className='text-4xl font-bold text-center text-white bg-[#0070b8] px-4 py-2 rounded-xl'>Our Services</h1>
-            <div className="scroller" data-direction="left" data-speed="slow">
+            {/* <h1 className='text-4xl font-bold text-center text-white bg-[#0070b8] px-4 py-2 rounded-xl'>Our Services</h1> */}
+            <Headings title="Services"/>
+            <div className="scroller mt-6" data-direction="left" data-speed="slow">
                 <div className="scroller__inner">
                     {boxes.map((elem, index) => (
                         <div key={index} class="relative bg-black">

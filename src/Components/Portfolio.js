@@ -19,12 +19,13 @@ import Img9 from '../Images/Portfolio/portfolio-img-09.png';
 import Img10 from '../Images/Portfolio/portfolio-img-10.png';
 import Img11 from '../Images/Portfolio/portfolio-img-11.png';
 import Img12 from '../Images/Portfolio/portfolio-img-12.png';
+import Headings from './Elements/Headings';
 
 function Portfolio() {
   return (
     <div className="container">
-      <div className='flex justify-center'>
-        <h1 className='text-4xl inline-block font-bold text-center text-white bg-[#0070b8] px-6 py-2 rounded-xl'>Portfolio</h1>
+      <div className='flex justify-center my-4'>
+        <Headings title="Portfolio" />
       </div>
       <Swiper
         effect={'coverflow'}

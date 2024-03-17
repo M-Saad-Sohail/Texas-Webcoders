@@ -15,7 +15,7 @@ const Qualities = () => {
     }
     const data = [
         { logo: <FaNetworkWired color='blue' size={45} />, title: 'Persistent Client Collaboration', img: Logo1 },
-        { logo: <FaNetworkWired color='blue' size={45} />, title: 'Exceptional Customer Fulfillment', img: Logo2 },
+        // { logo: <FaNetworkWired color='blue' size={45} />, title: 'Exceptional Customer Fulfillment', img: Logo2 },
         { logo: <FaNetworkWired color='blue' size={45} />, title: '100% Ownership Rights', img: Logo3 },
         { logo: <FaNetworkWired color='blue' size={45} />, title: 'Assured Refund Policy', img: Logo4 },
         { logo: <FaNetworkWired color='blue' size={45} />, title: 'Certified Industry Experts', img: Logo5 },
@@ -28,12 +28,12 @@ const Qualities = () => {
                     <h1 className='text-3xl font-bold text-white mb-4'>We Design The Best User Interface</h1>
                     <p className='text-lg text-blue-500'>To Set Your Footsteps Into Digital Realm</p>
                 </div>
-                <div className='grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-5 gap-6 mt-10'>
+                <div className='grid grid-cols-1 lg:grid-cols-4 gap-6 mt-10'>
                     {data.map((elem, index) => (
                         <div key={index} className='bg-white rounded-lg p-6 flex flex-col items-center justify-center'>
                             {/* {elem.logo} */}
                             <img src={elem.img} style={{}} />
-                            <h1 className='text-xl w-full font-bold text-gray-800 mt-4 text-center'>{elem.title}</h1>
+                            <h1 className='md:text-lg lg:text-lg w-full font-bold text-gray-800 mt-4 text-center'>{elem.title}</h1>
                         </div>
                     ))}
                 </div>

@@ -19,13 +19,13 @@ const ItemsContainer = () => {
           </p>
         </div>
         <div className="space-y-2 text-center sm:text-left">
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 cursor-pointer">
             <FaPhoneAlt color="#0070b8" />
-            <p className="text-base">+1 903-466-0144</p>
+            <a href='tel:+19034660144' className="text-base cursor-pointer">+1 903-466-0144</a>
           </div>
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 cursor-pointer">
             <IoMail color="#0070b8" />
-            <p className="text-base">info@texaswebcoders.com</p>
+            <a href="mailto:info@texaswebcoders.com" className="text-base">info@texaswebcoders.com</a>
           </div>
         </div>
       </div>
