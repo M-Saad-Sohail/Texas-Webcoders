@@ -16,6 +16,7 @@ const Packages = () => {
 
   const cards = [
     {
+      id: "website",
       title: "Basic Website Package",
       price: 145,
       xprice: "$799",
@@ -31,6 +32,7 @@ const Packages = () => {
       ]
     },
     {
+      id: "e-commerce",
       title: "Basic Ecommerce Package",
       price: 149,
       xprice: "$1649",
@@ -49,6 +51,7 @@ const Packages = () => {
       ]
     },
     {
+      id: "logo design",
       title: "Basic Logo Package",
       price: 19.99,
       xprice: "$79.00",
@@ -64,6 +67,7 @@ const Packages = () => {
       ]
     },
     {
+      id: "smm",
       title: "Startup Social Package",
       price: 399,
       xprice: "$1330",
@@ -95,6 +99,7 @@ const Packages = () => {
       ]
     },
     {
+      id: "seo",
       title: "Simple Start Package",
       price: 350,
       xprice: "$700",
@@ -128,6 +133,7 @@ const Packages = () => {
       ]
     },
     {
+      id: "content writing",
       title: "Web Content Basic",
       price: 129,
       xprice: "$258",
@@ -149,6 +155,7 @@ const Packages = () => {
       ]
     },
     {
+      id: "branding",
       title: "Startup Collateral Package",
       price: 99,
       xprice: "$198",
@@ -162,6 +169,7 @@ const Packages = () => {
       ]
     },
     {
+      id: "illustration",
       title: "Basic Illustrative Package",
       price: 294,
       xprice: "$588",
@@ -178,6 +186,7 @@ const Packages = () => {
       ]
     },
     {
+      id: "video",
       title: "Startup Video Package",
       price: 499,
       xprice: "$1598",
@@ -375,9 +384,9 @@ const Packages = () => {
   return (
     <>
       <h1 className='text-4xl font-bold text-center mt-10'>Packages Starting From</h1>
-      <div className='grid grid-cols-1 lg:grid-cols-3 px-4 gap-3'>
+      <div className='grid grid-cols-1 lg:grid-cols-3 px-4 gap-5'>
         {cards.map((card, index) => (
-          <div key={index} className="flex flex-col justify-between w-full max-w-sm mx-auto p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <div  id={card.id} key={index} className="flex flex-col justify-between w-full max-w-sm mx-auto p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
             <div>
               <div className='flex items-center justify-between'>
                 <h5 className="mb-4 text-2xl font-medium dark:text-white">{card.title}</h5>

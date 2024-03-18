@@ -12,12 +12,13 @@ import Reviews from './Components/Reviews';
 import Branding from './Components/Branding';
 import Packages from './Components/Packages';
 import Slider from './Components/Slider';
+import { useRef } from 'react';
 
 function App() {
   return (
     <div className="App bg-white">
       <Navbar />
-      <Features />
+      <Features/>
       <Hero />
       <Logo />
       <AboutUs />

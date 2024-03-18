@@ -19,12 +19,31 @@ const Features = () => {
     const toggleDropdown = () => {
         setIsDropdownOpen(!isDropdownOpen);
     };
+    const scrollToPackage = (elem) => {
+        let text = elem.toLowerCase();
+        const packageElement = document.getElementById(text);
+        if (packageElement) {
+            // Add animation effect by changing box shadow
+            packageElement.style.transition = 'box-shadow 0.5s ease-out';
+            packageElement.style.boxShadow = '0 0 20px 5px #0070b8'; // Change box shadow
+
+            packageElement.scrollIntoView({ behavior: 'smooth' });
+
+            // Remove the box shadow after the duration
+            setTimeout(() => {
+                packageElement.style.boxShadow = 'none'; // Reset box shadow
+            }, 3000); // Adjust the timeout to match the duration of the animation
+        }
+    };
+
+
+
     return (
         <>
             <div className='hidden xmd:flex justify-center'>
                 <ul className='flex flex-wrap justify-around w-full text-white lg:w-11/12 bg-[#0070b8] py-3 px-5 rounded-full font-medium text-sm'>
                     {features.map((elem, index) => (
-                        <li key={index} className='cursor-pointer py-1 px-1.5 md:px-2 lg:px-2.5 xl:px-3 sm:text-xs md:text-sm'>{elem}</li>
+                        <li onClick={() => scrollToPackage(elem)} key={index} className='cursor-pointer py-1 px-1.5 md:px-2 lg:px-2.5 xl:px-3 sm:text-xs md:text-sm'>{elem}</li>
                     ))}
                 </ul>
             </div>
@@ -51,7 +70,7 @@ const Features = () => {
                     <ul className="py-2 text-sm myBlue text-gray-700">
                         {features.map((elem, index) => (
                             <li key={index}>
-                                <button className="block px-4 py-2 myBlue text-white hover:bg-[#09578f] w-full text-left">{elem}</button>
+                                <button onClick={() => scrollToPackage(elem)} className="block px-4 py-2 myBlue text-white hover:bg-[#09578f] w-full text-left">{elem}</button>
                             </li>
                         ))}
                     </ul>
